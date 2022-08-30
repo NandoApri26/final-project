@@ -1,0 +1,532 @@
+/* #background-loading {
+  background: #07131e;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.loading-text {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  margin: -5px 0 0 -32px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  margin: -60px 0 0 -60px;
+  border: 4px solid transparent;
+  border-top-color: #ffa500;
+  border-bottom-color: #ffa500;
+  border-radius: 50%;
+  animation: loading 2s linear;
+  animation-iteration-count: infinite;
+}
+
+.loader::after,
+.loader::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.loader::after {
+  left: 15px;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 3px solid transparent;
+  border-top-color: #32cd32;
+  border-bottom-color: #32cd32;
+  animation: loading 1.5s linear;
+  animation-iteration-count: infinite;
+}
+
+.loader::before {
+  left: 6px;
+  top: 6px;
+  right: 6px;
+  bottom: 6px;
+  border: 3px solid transparent;
+  border-top-color: #03afdb;
+  border-bottom-color: #03afdb;
+  animation: loading 3s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+} */
+/* Akhir Loader */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+body {
+  line-height: 1.6;
+  height: 100vh;
+  cursor: default;
+  /* overflow: hidden; */
+  scroll-behavior: smooth;
+}
+
+/* Awal Navbar */
+.navbar,
+#Sub-Menu .nav {
+  background-color: #fce2db;
+}
+#Header .logo-navbar {
+  font-weight: bold;
+  font-size: 24px;
+  color: #b270a2;
+  text-decoration: none;
+}
+#Header .search input {
+  width: 450px;
+  font-size: 12px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+#Header .search button {
+  background-color: #fff;
+  color: #b8b8b8;
+  border-radius: 30px;
+  margin-right: 170px;
+}
+#Header .search button:hover {
+  background-color: #b270a2;
+  color: #fff;
+}
+#Header .login {
+  background-color: #b270a2;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px gray;
+}
+#Header .login:hover {
+  background-color: #fff;
+  color: #b270a2;
+}
+/* Akhir Navbar */
+
+/* Awal SUb Menu */
+#Sub-Menu .nav a {
+  font-weight: reguler;
+  font-size: 12px;
+  color: #b270a2;
+  text-decoration: none;
+}
+#Sub-Menu .nav a:hover {
+  font-weight: reguler;
+  font-size: 12px;
+  color: #ff8fb1;
+  text-decoration: none;
+  text-align: center;
+}
+#Sub-Menu .nav i {
+  font-size: 22px;
+  margin-top: 10px;
+}
+/* Akhir SUb Menu */
+
+/* Awal Banner */
+#Banner img {
+  width: 100%;
+  height: 550px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+#Banner .carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  background-color: #ff8fb1;
+  border-radius: 100%;
+  border-color: 0;
+}
+#Banner .carousel-control-next i,
+#Banner .carousel-control-prev i {
+  font-size: 52px;
+  color: #ff8fb1;
+}
+/* Akhir Banner */
+
+/* Awal Promo */
+#Promo .Judul h2,
+#Populer .Judul h2,
+#Wedding-Package .Judul h2,
+#Wedding-Photographer .Judul h2,
+#Wedding-Video .Judul h2,
+#Vendor .Judul h2,
+#Schedule .Judul h2 {
+  font-weight: normal;
+  color: #949494;
+}
+#Promo .Judul span,
+#Populer .Judul span,
+#Wedding-Package .Judul span,
+#Wedding-Photographer .Judul span,
+#Wedding-Video .Judul span,
+#Vendor .Judul span {
+  font-weight: bold;
+  color: #949494;
+}
+#Promo .banner-promo img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+#Promo .banner-promo,
+#Populer .PhotoPopuler,
+#Wedding-Package .WeddingPackage,
+#Wedding-Photographer .WeddingPhotographer,
+#Wedding-Video .WeddingVideo {
+  max-height: 450px;
+  display: flex;
+  overflow-x: auto;
+}
+.banner-promo::-webkit-scrollbar,
+#Populer .PhotoPopuler::-webkit-scrollbar,
+#Wedding-Package .WeddingPackage::-webkit-scrollbar,
+#Wedding-Photographer .WeddingPhotographer::-webkit-scrollbar,
+#Wedding-Video .WeddingVideo::-webkit-scrollbar {
+  width: 100px;
+}
+#Promo .banner-promo .item,
+#Populer .PhotoPopuler .item,
+#Wedding-Package .WeddingPackage .item,
+#Wedding-Video .WeddingVideo .item {
+  min-width: 300px;
+  height: -50px;
+  margin-right: 20px;
+}
+/* Akhir Promo */
+
+/* Awal Poppuler */
+#Populer .item {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+#Populer .PhotoPopuler a {
+  text-decoration: none;
+}
+#Populer .background {
+  margin-top: 50px;
+  background-color: #efefef;
+  width: 100%;
+  height: auto;
+}
+#Populer .PhotoPopuler img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+#Populer .PhotoPopuler img:hover {
+  opacity: 0.8;
+}
+#Populer .PhotoPopuler span {
+  color: black;
+  font-weight: bold;
+}
+#Populer .PhotoPopuler h6 {
+  font-weight: normal;
+  color: black;
+  margin-top: 20px;
+}
+#Populer .lihat-detail {
+  background-color: #b270a2;
+  border-radius: 45px;
+  color: #b8b8b8;
+  margin-bottom: 30px;
+}
+#Populer .lihat-detail:hover {
+  background-color: #ff8fb1;
+  color: #fff;
+}
+/* Akhir Poppuler */
+
+/* Awal Wedding-Package */
+#Wedding-Package .item,
+#Wedding-Video .item {
+  border: 1px solid #ff8fb1;
+  border-radius: 10px;
+}
+#Wedding-Photographer .background {
+  margin-top: 50px;
+  background-color: #efefef;
+  width: 100%;
+  height: auto;
+}
+#Wedding-Package .WeddingPackage a,
+#Wedding-Photographer .WeddingPhotographer a,
+#Wedding-Video .WeddingVideo a,
+#Vendor .WeddingVendor a {
+  text-decoration: none;
+}
+#Wedding-Package .WeddingPackage img,
+#Wedding-Photographer .WeddingPhotographer img,
+#Wedding-Video .WeddingVideo img,
+#Vendor .WeddingVendor img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+#Wedding-Package .WeddingPackage img:hover,
+#Wedding-Photographer .WeddingPhotographer img:hover,
+#Wedding-Video .WeddingVideo img:hover,
+#Vendor .WeddingVendor img:hover {
+  opacity: 0.8;
+}
+#Wedding-Package .WeddingPackage h6,
+#Wedding-Photographer .WeddingPhotographer h6,
+#Wedding-Video .WeddingVideo h6 {
+  font-weight: bold;
+  color: black;
+  margin-top: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: Ellipsis;
+  max-width: 250px;
+  padding: 0 15px;
+}
+#Wedding-Package .WeddingPackage p,
+#Wedding-Photographer .WeddingPhotographer p {
+  font-weight: normal;
+  color: black;
+  margin-top: -8px;
+  font-size: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: Ellipsis;
+  max-width: 300px;
+  padding: 0 15px;
+}
+#Wedding-Package .icon {
+  background-color: #ff8fb1;
+  font-size: 8px;
+  border-radius: 20px;
+  color: #fff;
+  padding: 0 15px;
+  margin-left: 15px;
+}
+#Wedding-Package .lihat-detail,
+#Vendor .lihat-detail {
+  background-color: #b270a2;
+  border-radius: 45px;
+  color: #b8b8b8;
+  margin: 30px 15px;
+}
+#Wedding-Package .lihat-detail:hover,
+#Wedding-Photographer .lihat-detail:hover,
+#Vendor .lihat-detail:hover,
+#Transaksi .btn-schedule:hover {
+  background-color: #ff8fb1;
+  color: #fff;
+}
+/* Akhir Wedding-Package */
+
+/* Awal Wedding-Photographer */
+#Wedding-Photographer .lihat-detail,
+#Wedding-Video .lihat-detail,
+#Transaksi .btn-schedule {
+  background-color: #b270a2;
+  border-radius: 45px;
+  color: #b8b8b8;
+  margin: 20px 15px;
+}
+#Wedding-Photographer .item {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+#Wedding-Photographer .WeddingPhotographer .item {
+  min-width: 300px;
+  height: auto;
+  margin-right: 20px;
+}
+/* Akhir Wedding-Photographer */
+
+/* Awal Wedding-Vendor */
+#Vendor .WeddingVendor h6 {
+  font-weight: bold;
+  color: #b270a2;
+  margin-top: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: Ellipsis;
+  max-width: 250px;
+  padding: 0 15px;
+}
+#Vendor .WeddingVendor small {
+  padding: 0 15px;
+  text-align: center;
+  color: #949494;
+}
+#Vendor .WeddingVendor {
+  max-height: 450px;
+  display: flex;
+  overflow-x: auto;
+}
+
+#Vendor .WeddingVendor::-webkit-scrollbar {
+  width: 100px;
+}
+#Vendor .item {
+  background-color: #fce2db;
+  border-radius: 10px;
+}
+
+#Vendor .WeddingVendor .item {
+  min-width: 300px;
+  height: auto;
+  margin-right: 20px;
+}
+#Vendor .rating {
+  margin: 20px 0;
+  font-weight: bold;
+}
+#Vendor .star {
+  font-size: 15px;
+  color: #fff;
+  display: inline-block;
+}
+/* Akhir Wedding-Vendor */
+
+/* Awal Schedule */
+#Schedule .check-out,
+#Transaksi .bg-transaksi {
+  background-color: #fce2db;
+  border-radius: 20px;
+}
+#Schedule .form-check {
+  margin-top: 95px;
+}
+#Schedule .image img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+#Schedule .text h6 {
+  font-weight: bold;
+  margin-top: 45px;
+}
+#Schedule .text span {
+  font-weight: normal;
+}
+#Schedule .trash i {
+  font-size: 38px;
+  color: #b02c2c;
+  margin-top: 85px;
+}
+/* Akhir Schedule */
+
+/* Awal Footer */
+#Footer .bg-footer {
+  background-color: #fce2db;
+  margin-top: 50px;
+}
+#Footer .logo-footer a {
+  font-weight: reguler;
+  font-size: 24px;
+  color: #b270a2;
+  text-decoration: none;
+  margin-top: 50px;
+}
+#Footer .sub1 h6 {
+  margin-top: 38px;
+  color: #949494;
+}
+#Footer .sub2 h5 {
+  color: #949494;
+  font-weight: bold;
+}
+#Footer .sub2 a,
+#Footer .sub2 p {
+  text-decoration: none;
+  list-style: none;
+  color: #949494;
+}
+#Footer .sub2 a:hover {
+  color: #ff8fb1;
+}
+#Footer ul li {
+  margin-left: -32px;
+}
+#Footer hr {
+  border: 2px solid #b02c2c;
+  margin-top: 30px;
+}
+#Footer .copyright p {
+  color: #949494;
+  margin-top: 10px;
+}
+#Footer .copyright i {
+  color: #797979;
+}
+#Footer .copyright ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+}
+#Footer .copyright img {
+  width: 40px;
+}
+#Footer .bynando h6 {
+  color: #949494;
+  text-align: center;
+}
+#Footer .bynando span {
+  font-weight: bold;
+}
+/* Akhir Footer */
+
+/* Awal Rate star */
+#Populer .star,
+#Wedding-Photographer .star,
+#Wedding-Video .star {
+  font-size: 15px;
+  color: #cfcfcf;
+  display: inline-block;
+}
+#Populer .over,
+#Wedding-Photographer .over,
+#Wedding-Video .over,
+#Vendor .over {
+  color: #ff8fb1;
+}
+#Populer .fix,
+#Wedding-Photographer .fix,
+#Wedding-Video .fix,
+#Vendor .fix {
+  color: #b270a2;
+}
+#Populer .rating,
+#Wedding-Photographer .rating,
+#Wedding-Video .rating {
+  margin: 30px 0;
+  font-weight: bold;
+}
+/* Akhir Rate star */
