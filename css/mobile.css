@@ -165,6 +165,53 @@
   }
   /* Akhir Schedule */
 
+  /* Awal Login */
+  #Login .Judul h2,
+  #Register .Judul h2 {
+    color: #797979;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+  #Login .form,
+  #Register .form {
+    box-shadow: 0 0 20px grey;
+    margin-top: 20px;
+    border-radius: 30px;
+  }
+  #Login .gambar img,
+  #Register .gambar img {
+    width: 100%;
+  }
+  #Login .label1 {
+    margin-top: 30px;
+  }
+  #Login .lp-pw {
+    text-decoration: none;
+    text-align: right;
+  }
+  #Login .login,
+  #Register .register {
+    background-color: #b270a2;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px gray;
+    margin-left: 120px;
+    margin-bottom: 20px;
+  }
+  #Login .login:hover,
+  #Register .login:hover {
+    background-color: #ff8fb1;
+    color: #fff;
+  }
+  #Login .not-account {
+    text-align: center;
+    text-decoration: none;
+  }
+  #Login .null {
+    margin-top: 50px;
+  }
+  /* Akhir Login */
+
   /* Awal Footer */
   #Footer .bg-footer {
     background-color: #fce2db;

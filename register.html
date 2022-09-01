@@ -33,33 +33,36 @@
 </style>
 
 <body>
-    <section id="Login">
+    <section id="Register">
         <div class="container">
             <div class="row">
                 <div class="col text-center Judul">
-                    <h2>Login Account</h2>
+                    <h2>Register Account</h2>
                 </div>
             </div>
-            <div class="bg-login">
+            <div class="bg-register">
                 <div class="container">
                     <div class="row justify-content-center form">
                         <div class="col-lg-6 gambar">
-                            <img src="./assets/Login.png" alt="">
+                            <img src="./assets/register.png" alt="">
                         </div>
-                        <div class="col-lg-5 form-login">
+                        <div class="col-lg-5 form-register">
                             <form action="" method="">
-                                <label for="" class="label1">Email / User name</label>
+                                <label for="" class="label1">User name</label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="Masukkan email / username">
-                                <label for="" class="label2 mt-3">Password</label>
+                                    placeholder="Masukkan username">
+                                <label for="" class="label2">Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Masukkan email">
+                                <label for="" class="label3 mt-3">Password</label>
                                 <input type="password" class="form-control" id="exampleFormControlInput1"
                                     placeholder="Masukkan password">
-                                <a href="" class="lp-pw">
-                                    <p>Lupa password?</p>
-                                </a>
-                                <a href="index.html" class="btn login">Masuk</a>
-                                <a href="register.html" class="not-account">
-                                    <p>Belum punya akun? Daftar</p>
+                                <label for="" class="label3 mt-3">Confirm Password</label>
+                                <input type="password" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Masukkan confirm password">
+                                <a href="index.html" class="btn register mt-3">Daftar</a>
+                                <a href="login.html" class="not-account">
+                                    <p>Sudah punya akun? Masuk</p>
                                 </a>
                             </form>
                         </div>

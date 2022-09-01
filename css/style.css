@@ -443,6 +443,67 @@ body {
 }
 /* Akhir Schedule */
 
+/* Awal Login */
+#Login .Judul h2,
+#Register .Judul h2 {
+  color: #b270a2;
+  font-weight: bold;
+  margin-top: 150px;
+  -webkit-text-stroke: 1px #fff;
+}
+#Login .form,
+#Register .form {
+  box-shadow: 0 0 20px grey;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+#Login .gambar img,
+#Register .gambar img {
+  width: 100%;
+}
+#Login .form-login label,
+#Register .form-register label {
+  font-weight: bold;
+  color: #b270a2;
+}
+#Login .label1 {
+  margin-top: 200px;
+}
+#Login .lp-pw {
+  text-decoration: none;
+  text-align: right;
+}
+#Login .login,
+#Register .register {
+  background-color: #b270a2;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px gray;
+  margin-left: 220px;
+  margin-bottom: 20px;
+}
+#Login .login:hover,
+#Register .register:hover {
+  background-color: #ff8fb1;
+  color: #fff;
+}
+#Login .not-account,
+#Register .not-account {
+  text-align: center;
+  text-decoration: none;
+}
+#Login .null,
+#Register .null {
+  margin-top: 150px;
+}
+/* Akhir Login */
+
+/* Awal Register */
+#Register .label1 {
+  margin-top: 100px;
+}
+/* Akhir Register */
+
 /* Awal Footer */
 #Footer .bg-footer {
   background-color: #fce2db;
